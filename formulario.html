@@ -3,23 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario</title>
 </head>
 <body>
     <table border="1" width="80%">
-    <tr>
-        <td width="20%" bgcolor="#000080"><img src="images/mazin.jpeg" width="200px"></td>
 
-        <td bgcolor="#c0c0c0"> <h1>Mazinger Z</h1></td>
-    </tr>
 
     <tr>
-        <td></td>
+        <td> 
+            <div style="padding: 12px;">
+            <fieldset>
+            <legend>Datos personales</legend>
+            <br/>
+            <form action="http://ncoge.com/phps/formulario.php">
+                Nombre:
+                <input type="text" name="nombre" value="" />
+            <br/><br>
+                Apellidos:
+                <input type="text" name="apellidos" value=""/>
+            <br/><br>
+                Curso:
+                <label for="curso"></label> <br/>
+                <textarea id="curso" name="curso" cols="40" rows="5">
+                </textarea>
+
+                <!--
+                <input  type="text" name="curso" value="" />
+                -->
+
+            <br/><br>
+            </div>
+        </td>
+        
+        <td>                
+            <div style="padding: 12px;">
+                
+                <div>
+                    <fieldset>
+                    <legend>Idiomas</legend>
+                    Puntua tu nivel de idiomas de 1 a 5
+                    <br/>
+
+                        Inglés
+                        1<input type="radio" name="ingles" value="1" checked="checked" />
+                        2<input type="radio" name="ingles" value="2"  />
+                        3<input type="radio" name="ingles" value="3"  />
+                        4<input type="radio" name="ingles" value="4"  />
+                        5<input type="radio" name="ingles" value="5"  />
+                        
+                        <br/>
+
+                        Francés
+                        1<input type="radio" name="frances" value="1" checked="checked" />
+                        2<input type="radio" name="frances" value="2"  />
+                        3<input type="radio" name="frances" value="3"  />
+                        4<input type="radio" name="frances" value="4"  />
+                        5<input type="radio" name="frances" value="5"  />
+
+                        <br/>
+
+                        Alemán
+                        1<input type="radio" name="aleman" value="1" checked="checked" />
+                        2<input type="radio" name="aleman" value="2"  />
+                        3<input type="radio" name="aleman" value="3"  />
+                        4<input type="radio" name="aleman" value="4"  />
+                        5<input type="radio" name="aleman" value="5"  />
+                </div>
+                <div>
+                    <fieldset>
+                    <legend>Domino los siguientes programas</legend>
+                    <br/>
+
+                        Inglés
+                        1<input type="radio" name="ingles" value="1" checked="checked" />
+                        2<input type="radio" name="ingles" value="2"  />
+                        3<input type="radio" name="ingles" value="3"  />
+                        4<input type="radio" name="ingles" value="4"  />
+                        5<input type="radio" name="ingles" value="5"  />
+                        
+                        <br/>
+
+                        Francés
+                        1<input type="radio" name="frances" value="1" checked="checked" />
+                        2<input type="radio" name="frances" value="2"  />
+                        3<input type="radio" name="frances" value="3"  />
+                        4<input type="radio" name="frances" value="4"  />
+                        5<input type="radio" name="frances" value="5"  />
+
+                        <br/>
+
+                        Alemán
+                        1<input type="radio" name="aleman" value="1" checked="checked" />
+                        2<input type="radio" name="aleman" value="2"  />
+                        3<input type="radio" name="aleman" value="3"  />
+                        4<input type="radio" name="aleman" value="4"  />
+                        5<input type="radio" name="aleman" value="5"  />
+                </div>
+
+
+            </div>
+
+
+
+        
+        </td>
     </tr>
 
 </table >
 
-
+            <input type="submit" value="Enviar" />
+            </form>
 
 
     
